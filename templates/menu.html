@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+ {% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everest momo | Menu Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/debda440fa.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chela+One&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Open Sans', sans-serif;">
+
+    <!-- navbar sectioin -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary z-1">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'homepage' %}">
+                <img src="/static/Images/home/Logo.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link mx-2"  href="{% url 'aboutpage' %}">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fw-bold mx-2" style="color: #0C6967;" aria-current="page" href="{% url 'menupage' %}">Our Menus</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2" href="{% url 'servicepage'%}">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-2"  href=" {% url 'advicepage' %}">Allergy Advice</a>
+              </li>
+            </ul>
+            <a href="" class="m-2"><i class="fa-brands fa-facebook fa-2xl" style="color: #888888;"></i></a>
+            <a href="" class="m-2"><i class="fa-brands fa-tiktok fa-2xl" style="color: #888888;"></i></a>
+            <a href="" class="m-2"><i class="fa-brands fa-instagram fa-2xl" style="color: #888888;"></i></a>
+            <form class="flex" action="{% url 'contactpage' %}">
+              <button style="background-color: #D95103; color: white; border-radius: 30px; margin-left: 50px;" class="btn px-4 py-2" type="submit">Contact Us</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <hr class="m-0">
+
+    <!-- main head section -->
+    <div class="container my-4">
+      <div class="row  py-5">
+          <div class="text-center" >
+              <h1 class="mb-5" style="font-family: 'Allura', cursive; color: #0C6967; font-size: 70px;">Our Menu</h1>
+              <h3 class="fw-bold" style="color: #D95103;">Our menu is more than just momos,</h3>
+              <h3 class="fw-bold">with a variety of dishes to cater to all tastes and preferences.</h3>
+          </div>
+      </div>
+    </div>
+
+    <!-- QR Code sectin -->
+    <div class="container bg-body-secondary my-5 py-4 rounded-4">
+      <div class="row">
+        <div class="text-center ">
+          <p class="fs-4 fw-bold" style="color: #0C6967;">Scan the QR Code</p>
+          <p>You can also check the allergy advices using your phone as well</p>
+          <img src="/static/Images/menu/QR code.png" alt="">
+          <p class="fs-4 fw-bold"><span style="color: #D95103;">SCAN </span>ME! 📱</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- buff momo menu -->
+    <div class="container my-5">
+      <div class="row p-4">
+        <div class="col-sm-4 text-end">
+          <img src="/static/Images/menu/left_brush.png" alt="">
+        </div>
+        <div class="col-sm-4 text-center">
+          <h2 style="font-family: 'Chela One', cursive;"><span style="color: #D95103;">B U F F</span> &#8287; M O M O's</h2>
+        </div>
+        <div class="col-sm-4">
+          <img src="/static/Images/menu/right_brush.png" alt="">
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/Steam Momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/new.png" alt="">
+            <h4 class="fw-bold">Buff Steam Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Buff Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/Fry Momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/popular.png" alt="">
+            <h4 class="fw-bold">Buff Fry Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Buff Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/C Momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/recommended.png" alt="">
+            <h4 class="fw-bold">Buff C Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Buff Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/Jhol momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/popular.png" alt="">
+            <h4 class="fw-bold">Buff Jhol Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Buff Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- chicken momo menu -->
+    <div class="container my-5">
+      <div class="row p-4 mt-5">
+        <div class="col-sm-4 text-end">
+          <img src="/static/Images/menu/left_brush.png" alt="">
+        </div>
+        <div class="col-sm-4 text-center">
+          <h2 style="font-family: 'Chela One', cursive;"><span style="color: #D95103;">C H I C K E N</span> &#8287; M O M O's</h2>
+        </div>
+        <div class="col-sm-4">
+          <img src="/static/Images/menu/right_brush.png" alt="">
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/Steam Momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/new.png" alt="">
+            <h4 class="fw-bold">Chicken Steam Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Chicken Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/Fry Momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/popular.png" alt="">
+            <h4 class="fw-bold">Chicken Fry Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Chicken Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/C Momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/recommended.png" alt="">
+            <h4 class="fw-bold">Chicken C Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Chicken Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="text-center p-5 mx-5 shadow rounded-4">
+            <img class="mb-0 z-0" src="/static/Images/menu/Jhol momo.png" alt=""><br>
+            <img style="margin-top: -80px;" class="z-1" src="/static/Images/menu/popular.png" alt="">
+            <h4 class="fw-bold">Chicken Jhol Momo</h4>
+            <p class="fw-bold">Rs. <span style="color: #D95103;"> 200</p>
+            <p class="text-body-tertiary">(Freshly Steamed Chicken Momos made from whole wheat and kneaded with beta Carotene Rich Vegetable Juice)</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- footer section -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+  
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <a href="{% url 'homepage' %}">
+                <img src="/static/Images/home/Logo.png" class="my-4">
+              </a>
+              <p class="text-body-tertiary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed rem ab repellendus quidem? Cupiditate sequi, quibusdam in voluptate rerum tenetur veniam aliquam</p>
+            </div>
+            
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold my-4" style="color: #0C6967;">Everest Momo</h6>
+              <p><a href="{% url 'aboutpage' %}" class="text-reset">About Us</a></p>
+              <p><a href="{% url 'menupage' %}" class="text-reset">Our Menu</a></p>
+              <p><a href="{% url 'servicepage' %}" class="text-reset">Our Services</a></p>
+              <p><a href="{% url 'contactpage' %}" class="text-reset">Contact Us</a></p>
+            </div>
+    
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold my-4" style="color: #0C6967;">Legals</h6>
+              <p><a href="#!" class="text-reset">Terms & Conditions</a></p>
+              <p><a href="#!" class="text-reset">Privacy Policy</a></p>
+              <p><a href="#!" class="text-reset">Support</a></p>
+            </div>
+    
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold my-4" style="color: #0C6967;">Follow Us</h6>
+              <a href="" class="btn btn-outline-secondary rounded-5 m-2 text-reset"><i class="fab fa-facebook-f"></i></a>
+              <a href="" class="btn btn-outline-secondary rounded-5 m-2 text-reset"><i class="fab fa-tiktok"></i></a>
+              <a href="" class="btn btn-outline-secondary rounded-5 m-2 text-reset"><i class="fab fa-instagram"></i></a>
+              <a href="" class="btn btn-outline-secondary rounded-5 m-2 text-reset"><i class="fab fa-linkedin"></i></a>
+              <a href="" class="btn btn-outline-secondary rounded-5 m-2 text-reset"><i class="fab fa-twitter"></i></a>
+              <a href="" class="btn btn-outline-secondary rounded-5 m-2 text-reset"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <div class="text-center p-4">
+        <h6>Copyright ©️ 2023 Everest Momo Pvt Ltd. All Rights Reserved</h6>
+      </div>
+      
+    </footer>
+
+</body>
+</html>
